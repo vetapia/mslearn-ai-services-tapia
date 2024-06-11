@@ -13,11 +13,11 @@ def main():
     try:
         # Get Configuration Settings
         load_dotenv()
-        ai_endpoint = os.getenv('AI_SERVICE_ENDPOINT')
-        key_vault_name = os.getenv('KEY_VAULT')
-        app_tenant = os.getenv('TENANT_ID')
-        app_id = os.getenv('APP_ID')
-        app_password = os.getenv('APP_PASSWORD')
+        ai_endpoint = os.getenv('https://mvti.cognitiveservices.azure.com/')
+        key_vault_name = os.getenv('mvti-boveda')
+        app_tenant = os.getenv('d1cfbf10-1770-4f47-a9ba-ddafcd908643')
+        app_id = os.getenv('d2aa8234-777c-4696-a88a-f9f13686ba38')
+        app_password = os.getenv('WdM8Q~TeaAxtvP1UdfLBMVU8d8pigjoEypsbSb-D')
 
         # Get Azure AI services key from keyvault using the service principal credentials
         key_vault_uri = f"https://{key_vault_name}.vault.azure.net/"
